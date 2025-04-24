@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="nav-circles">
+            <div class="circle active" data-page="1"></div>
+            <div class="circle" data-page="2"></div>
+            <div class="circle" data-page="3"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- About Me Page -->
+        <section class="page active" id="about">
+            <div class="background-image" style="background-image: url('images/pers.jpg');"></div>
+            <div class="content">
+                <h1>Hassanein El Massry</h1>
+                <div class="about-text">
+                    <p>Hi, I'm Hassanein El Massry. I'm a computer engineering student with a passion for blending technology and innovation to create impactful solutions.</p>
+                    <p>As an international student in Iran, I bring a global perspective to my work and am dedicated to mastering both the theoretical and practical aspects of engineering. My focus lies in developing systems that are efficient, functional, and forward-thinking.</p>
+                    <p>With a strong foundation in both hardware and software, I strive to bridge the gap between cutting-edge technology and real-world applications, ensuring that my projects are not only innovative but also practical and user-friendly.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+        <section class="page" id="projects">
+            <div class="slider-container">
+                <div class="project slide active">
+                    <div class="background-image blurred" style="background-image: url('images/p1.jpeg');"></div>
+                    <div class="content">
+                        <h2>E-Commerce Platform</h2>
+                        <p>A fully responsive online shopping platform built with React and Node.js. Features include user authentication, payment processing, and inventory management.</p>
+                        <a href="#" class="button">View Project</a>
+                    </div>
+                </div>
+                <div class="project slide">
+                    <div class="background-image blurred" style="background-image: url('images/p2.webp');"></div>
+                    <div class="content">
+                        <h2>Data Visualization Dashboard</h2>
+                        <p>Interactive dashboard that transforms complex data into intuitive visualizations. Built with D3.js and integrated with various data APIs.</p>
+                        <a href="#" class="button">View Project</a>
+                    </div>
+                </div>
+                <div class="project slide">
+                    <div class="background-image blurred" style="background-image: url('images/p3.jpg');"></div>
+                    <div class="content">
+                        <h2>AI Image Recognition App</h2>
+                        <p>Mobile application that uses machine learning to identify objects in photographs. Developed with TensorFlow and React Native.</p>
+                        <a href="#" class="button">View Project</a>
+                    </div>
+                </div>
+                <div class="project slide">
+                    <div class="background-image blurred" style="background-image: url('images/p4.jpg');"></div>
+                    <div class="content">
+                        <h2>Smart Home Controller</h2>
+                        <p>IoT project that enables users to control home devices through a web interface. Built with WebSockets for real-time communication.</p>
+                        <a href="#" class="button">View Project</a>
+                    </div>
+                </div>
+                <div class="project slide">
+                    <div class="background-image blurred" style="background-image: url('images/p5.jpg');"></div>
+                    <div class="content">
+                        <h2>Virtual Reality Experience</h2>
+                        <p>Immersive VR experience for architectural visualization. Created with Three.js and WebXR to allow clients to explore building designs.</p>
+                        <a href="#" class="button">View Project</a>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev" id="prev-project">←</button>
+                    <div class="indicator">
+                        <span class="current">1</span>/<span class="total">5</span>
+                    </div>
+                    <button class="next" id="next-project">→</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Page -->
+        <section class="page" id="interests">
+            <div class="slider-container">
+                <div class="interest slide active">
+                    <div class="background-image blurred" style="background-image: url('images/i1.webp');"></div>
+                    <div class="content">
+                        <h2>Astrophotography</h2>
+                        <p>I spend many clear nights capturing the beauty of deep space objects. There's something magical about photographing light that has traveled for thousands or even millions of years.</p>
+                    </div>
+                </div>
+                <div class="interest slide">
+                    <div class="background-image blurred" style="background-image: url('images/i2.jpeg');"></div>
+                    <div class="content">
+                        <h2>Hiking</h2>
+                        <p>Exploring mountain trails brings me both peace and excitement. I try to discover new paths each month, documenting the landscapes and wildlife I encounter along the way.</p>
+                    </div>
+                </div>
+                <div class="interest slide">
+                    <div class="background-image blurred" style="background-image: url('images/i3.jpg');"></div>
+                    <div class="content">
+                        <h2>Wildlife Conservation</h2>
+                        <p>I volunteer with local conservation groups to protect endangered species in our region. This work connects me to nature in a meaningful way and helps preserve biodiversity.</p>
+                    </div>
+                </div>
+                <div class="interest slide">
+                    <div class="background-image blurred" style="background-image: url('images/i4.jpg');"></div>
+                    <div class="content">
+                        <h2>Vintage Computing</h2>
+                        <p>I collect and restore old computers from the 80s and 90s. There's something fascinating about experiencing the early days of personal computing and preserving this technological history.</p>
+                    </div>
+                </div>
+                <div class="interest slide">
+                    <div class="background-image blurred" style="background-image: url('images/i5.jpg');"></div>
+                    <div class="content">
+                        <h2>Culinary Exploration</h2>
+                        <p>I love discovering cuisine from different cultures, both by cooking at home and seeking out authentic restaurants. Food is a universal language that connects people across borders.</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev" id="prev-interest">←</button>
+                    <div class="indicator">
+                        <span class="current">1</span>/<span class="total">5</span>
+                    </div>
+                    <button class="next" id="next-interest">→</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
